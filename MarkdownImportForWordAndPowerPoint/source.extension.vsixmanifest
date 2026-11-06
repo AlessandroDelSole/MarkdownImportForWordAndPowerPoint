@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="MarkdownImportForWordAndPowerPoint.cb87d609-1cb9-4b7f-9d60-ec6bf3cd99a4" Version="1.0" Language="en-US" Publisher="Alessandro Del Sole" />
+    <DisplayName>Markdown Import For Word And PowerPoint</DisplayName>
+    <Description>Convert Word (.docx) documents and PowerPoint (.pptx) presentations into Markdown (.md) files from Visual Studio. Choose a destination folder, select an Office file, and the extension creates the Markdown file in that folder.</Description>
+    <License>License.txt</License>
+    <Icon>Resources\MarketplaceIcon.png</Icon>
+    <PreviewImage>Resources\PreviewImage.png</PreviewImage>
+    <Tags>markdown;docx;pptx;word;powerpoint;import;documentation</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.14, )">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" d:Source="Manual" />
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" DisplayName="Visual Studio core editor" Version="[17.14, )" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" d:Source="Project" d:ProjectName="%CurrentProject%" />
+  </Assets>
+</PackageManifest>

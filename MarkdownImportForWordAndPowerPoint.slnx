@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="MarkdownImportForWordAndPowerPoint/MarkdownImportForWordAndPowerPoint.csproj">
+    <Deploy />
+  </Project>
+</Solution>
